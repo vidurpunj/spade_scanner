@@ -1,0 +1,7 @@
+{
+  "name": "spade_scanner",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
