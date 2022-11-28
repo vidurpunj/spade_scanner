@@ -8,8 +8,16 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'home',
+    redirectTo: 'list',
     pathMatch: 'full'
+  },
+  {
+    path: 'list',
+    loadChildren: () => import('./videos/list/list.module').then( m => m.ListPageModule)
+  },
+  {
+    path: 'play_video',
+    loadChildren: () => import('./videos/video-player/video-player.module').then( m => m.VideoPlayerPageModule)
   },
 ];
 
